@@ -35,3 +35,56 @@ body {
   margin-bottom: 20px;
   width: 220px;
 }
+
+/* MODAL */
+.pokemon-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal-content {
+  position: relative; 
+  background: white;
+  border-radius: 12px;
+  padding: 70px;
+  max-width: 300px;
+  text-align: start;
+  animation: fadeIn 0.3s ease;
+}
+
+
+.close-modal {
+  background: none;
+  border: none;
+  font-size: 22px;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+  color: #555;
+  transition: 0.3s;
+  text-align: start;
+}
+
+
+
+.close-modal:hover {
+  color: #000;
+  transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
