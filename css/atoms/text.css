@@ -1,0 +1,9 @@
+.pokemon-name {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.pokemon-types {
+  font-size: 0.9rem;
+  color: #666;
+}

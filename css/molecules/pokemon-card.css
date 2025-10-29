@@ -1,0 +1,11 @@
+.pokemon-card {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 12px;
+  width: 150px;
+  transition: transform 0.2s ease;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+}
